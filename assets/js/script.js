@@ -59,8 +59,7 @@ function affichageQuiz() { //fonction pour afficher les questions et les choix d
                 <label for="answer${i}-4">${question.propositions[3]}</label>
             </div>
         </div>
-        <div id="anecdote${i}" class="anecdote">
-        </div>
+        <div id="anecdote${i}" class="anecdote"></div>
       `;
     }
 }
@@ -97,8 +96,7 @@ function valid(event) { //valide le quiz, score et fin
             if (answer == bonneRep) {
                 score++;
                 label[rep_nbr].parentNode.classList.add('green');
-
-                document.getElementById(`anecdote${i + 1}`).innerText = questions[i].anecdote;
+                document.getElementById(`anecdote${i + 1}`).innerText = questions[i].anecdote; //on appelle l'instert des annecdotes si la réponse est bonne
             } else {
                 label[rep_nbr].parentNode.classList.add('red');
             }
@@ -115,9 +113,9 @@ function valid(event) { //valide le quiz, score et fin
             Parfait!
             Tu as maîtrisé le Quiz tel un full stack, GG!`;
     }
-    /*localStorage.setItem("score", score);
+    localStorage.setItem("score", score);
     const pseudo = inputValue(document.getElementById('pseudo'));
-    localStorage.setItem("pseudo", pseudo);*/
+    localStorage.setItem("pseudo", pseudo);
 }
 
 check();
