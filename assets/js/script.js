@@ -11,7 +11,7 @@ async function check() {
     document.querySelector('form').addEventListener('submit', valid);
     questions = await getJson(); //récupère data json sous forme de tableau
     shuffleArray(questions); //randomise le tableau
-    questions = questions.slice(0, 5); //on sélectionne le nombre de questions à afficher
+    questions = questions.slice(0, 10); //on sélectionne le nombre de questions à afficher
     affichageQuiz();
     affichageFin();
 }
@@ -28,34 +28,39 @@ function affichageFin() { //affiche le résutat
    <div id="result">
       <div id="score"></div>
       <button type="submit" class="btn">L'enfer sur terre !</button>
-   </div>`;
+   </div>
+   
+   <input type="text" class="pseudo" placeholder="Pseudo" id="pseudo"></input>`;
 }
 
 function affichageQuiz() { //fonction pour afficher les questions et les choix de réponses
     var form = document.querySelector('form');
     for (i = 1; i < questions.length + 1; i++) {
         question = questions[i - 1];
+
         //remplissage du formulaire
-        form.innerHTML += ` 
-      <div id="question${i}" class="question">
-         <div class="quest">${question.question}</div>
-         <div class="answer">
-               <input type="radio" name="question${i}" id="answer${i}-1" value="0">
-               <label for="answer${i}-1">${question.propositions[0]}</label>
-         </div>
-         <div class="answer">
-               <input type="radio" name="question${i}" id="answer${i}-2" value="1">
-               <label for="answer${i}-2">${question.propositions[1]}</label>
-         </div>
-         <div class="answer">
-               <input type="radio" name="question${i}" id="answer${i}-3" value="2">
-               <label for="answer${i}-3">${question.propositions[2]}</label>
-         </div>
-         <div class="answer">
-               <input type="radio" name="question${i}" id="answer${i}-4" value="3">
-               <label for="answer${i}-4">${question.propositions[3]}</label>
-         </div>
-      </div>
+        form.innerHTML += `
+        <div id="question${i}" class="question">
+            <div class="quest">${question.question}</div>
+            <div class="answer">
+                <input type="radio" name="question${i}" id="answer${i}-1" value="0">
+                <label for="answer${i}-1">${question.propositions[0]}</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="question${i}" id="answer${i}-2" value="1">
+                <label for="answer${i}-2">${question.propositions[1]}</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="question${i}" id="answer${i}-3" value="2">
+                <label for="answer${i}-3">${question.propositions[2]}</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="question${i}" id="answer${i}-4" value="3">
+                <label for="answer${i}-4">${question.propositions[3]}</label>
+            </div>
+        </div>
+        <div id="anecdote${i}" class="anecdote">
+        </div>
       `;
     }
 }
@@ -92,6 +97,8 @@ function valid(event) { //valide le quiz, score et fin
             if (answer == bonneRep) {
                 score++;
                 label[rep_nbr].parentNode.classList.add('green');
+
+                document.getElementById(`anecdote${i + 1}`).innerText = questions[i].anecdote;
             } else {
                 label[rep_nbr].parentNode.classList.add('red');
             }
@@ -100,13 +107,17 @@ function valid(event) { //valide le quiz, score et fin
 
     // Affiche le score + petite phrase en fonction du score
     if (score < questions.length) {
-        document.getElementById('score').innerHTML = `Ton score est de ${score} / ${questions.length} 
-                Essaye encore!`;
+        document.getElementById('score').innerHTML = `
+            Ton score est de ${score} / ${questions.length}. 
+            Essaye encore!`;
     } else {
         document.getElementById('score').innerHTML = `
-                Parfait!
-                Tu as maîtrisé le Quiz tel un full stack, GG!`;
+            Parfait!
+            Tu as maîtrisé le Quiz tel un full stack, GG!`;
     }
+    /*localStorage.setItem("score", score);
+    const pseudo = inputValue(document.getElementById('pseudo'));
+    localStorage.setItem("pseudo", pseudo);*/
 }
 
-check()
+check();

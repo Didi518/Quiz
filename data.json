@@ -8,7 +8,7 @@
             "< scripting >"
         ],
         "reponse": "< Script >",
-        "anecdote": "La réponse D"
+        "anecdote": "On utilise bien < script > < /script > pour insérer le Javascript."
     },
     {
         "id": 2,
@@ -16,11 +16,11 @@
         "propositions": [
             "#demo.innerHTML = 'Je déteste Vincent !'",
             "document.getElementById('demo').innerHTML = 'Je déteste Vincent !'",
-            "document.getElement('p').innerHTML = 'Je déteste Vincent !'",
+            "document.getElementByClasseName('p').innerHTML = 'Je déteste Vincent !'",
             "document.getElement('p').innerHTML = 'Je déteste Vincent !'"
         ],
         "reponse": "document.getElementById('demo').innerHTML = 'Je déteste Vincent !'",
-        "anecdote": "La réponse D"
+        "anecdote": "La syntaxe correcte est bien 'document.getElementById(\"\").innerHTML = '"
     },
     {
         "id": 3,

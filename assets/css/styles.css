@@ -19,10 +19,17 @@ h1 {
     font-weight: 900;
     font-size: 70px;
     letter-spacing: 10px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgba(33, 245, 33, 0.726);
 }
 
 h1 span {
     color: rgba(255, 8, 8, 0.801);
+}
+
+.question {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .quest {
@@ -37,6 +44,12 @@ h5 {
     color: rgba(33, 245, 33, 0.726);
     letter-spacing: 1px;
     font-size: 18px;
+}
+
+.result {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
@@ -62,6 +75,11 @@ h5 {
     color: aliceblue;
 }
 
+.pseudo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .green {
     color: rgba(33, 245, 33, 0.726);
 }
@@ -74,4 +92,9 @@ h5 {
     margin: 30px;
     font-size: 20px;
     letter-spacing: 3px;
+}
+
+.anec {
+    color: rgba(33, 245, 33, 0.726);
+    visibility: hidden;
 }
