@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgba(5, 0, 39, 0.9);
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px;
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+h1 span {
+    color: rgba(255, 8, 8, 0.801);
+}
+
+.quest {
+    margin: 20px;
+}
+
+.answer {
+    margin: 5px;
+}
+
+h5 {
+    color: rgba(33, 245, 33, 0.726);
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 40%;
+    color: #ff0000b2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #ff0000b2;
+    color: rgba(15, 10, 55, .9);
+    transition: transform 0.5s;
+    background: rgba(33, 245, 33, 0.726);
+    color: aliceblue;
+}
+
+.green {
+    color: rgba(33, 245, 33, 0.726);
+}
+
+.red {
+    color: #ff0000b2;
+}
+
+#score {
+    margin: 30px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(33, 245, 33, 0.726);
+}

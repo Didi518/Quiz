@@ -1,0 +1,301 @@
+[{
+        "id": 1,
+        "question": "Dans quel balise HTML insert-on le Javascript ?",
+        "propositions": [
+            "< Javascript >",
+            "< Script >",
+            "< js >",
+            "< scripting >"
+        ],
+        "reponse": "< Script >",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 2,
+        "question": "Quelle est la bonne syntaxe Javascript pour changer le contenu HTML de l'élément suivant ?",
+        "propositions": [
+            "#demo.innerHTML = 'Je déteste Vincent !'",
+            "document.getElementById('demo').innerHTML = 'Je déteste Vincent !'",
+            "document.getElement('p').innerHTML = 'Je déteste Vincent !'",
+            "document.getElement('p').innerHTML = 'Je déteste Vincent !'"
+        ],
+        "reponse": "document.getElementById('demo').innerHTML = 'Je déteste Vincent !'",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 3,
+        "question": "A quel emplacement doit-on insérer du Javascript ?",
+        "propositions": [
+            "La partie < head >",
+            "La partie < body >",
+            "La partie < footer >",
+            "On peut l'insérer à la fois par la partie < head > et par la partie < body >"
+        ],
+        "reponse": "On peut l'insérer à la fois par la partie < head > et par la partie < body >",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 4,
+        "question": "Comment créer une fonction avec Javascript ?",
+        "propositions": [
+            "function myFunction()",
+            "function:myFunction()",
+            "function = myFunction()",
+            "function === myFunction"
+        ],
+        "reponse": "function myFunction()",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 5,
+        "question": "Comment introduire une condition avec IF en Javascript ?",
+        "propositions": [
+            "if i = 5 then",
+            "if i= 5",
+            "if i == 5 then",
+            "if(i = 5)"
+        ],
+        "reponse": "if(i = 5)",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 6,
+        "question": "Comment commenter avec Javascript ?",
+        "propositions": [
+            "// Ceci est un commentaire",
+            "'Ceci est un commentaire",
+            "< !-- Ceci est un commentaire -- >",
+            "*/ Ceci est un commentaire"
+        ],
+        "reponse": "// Ceci est un commentaire",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 7,
+        "question": "De quelle manière on réalise un tableau en Javascript ?",
+        "propositions": [
+            "var couleur = 1 = ('rouge'), 2 = ('vert'), 3 = ('bleu')",
+            "var couleur = 'rouge', 'vert', 'bleu'",
+            "var couleur = [rouge, vert, bleu]",
+            "var couleur = (1: 'rouge', 2: 'vert', 3: 'bleu')"
+        ],
+        "reponse": "var couleur = [rouge, vert, bleu]",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 8,
+        "question": "Comment déclarer une variable en Javascript ?",
+        "propositions": [
+            "v maVariable;",
+            "variable maVariable;",
+            "var maVariable;",
+            "maVariable = var"
+        ],
+        "reponse": "var maVariable;",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 9,
+        "question": "Quelle organisation définit les standards Web?",
+        "propositions": [
+            "Apple Inc.",
+            "IBM Corporation",
+            "World Wild Web Consortium",
+            "Microsoft Corporation"
+        ],
+        "reponse": "World Wild Web Consortium",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 10,
+        "question": "HTML est considéré comme : ",
+        "propositions": [
+            "Langage de programmation",
+            "Langage POO",
+            "Langage de haut niveau",
+            "Langage de balisage"
+        ],
+        "reponse": "Langage de balisage",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 11,
+        "question": "HTML utilise des : ",
+        "propositions": [
+            "balises définies par l'utilisateur",
+            "balises prédéfinies",
+            "balises fixes définies par le langage",
+            "balises uniquement pour les liens"
+        ],
+        "reponse": "balises fixes définies par le langage",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 12,
+        "question": "En quelle année HTML a été proposé pour la première fois ?",
+        "propositions": [
+            "1980",
+            "1990",
+            "1995",
+            "2000"
+        ],
+        "reponse": "1990",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 13,
+        "question": "Lequel des éléments suivants n'est pas un exemple de navigateur ?",
+        "propositions": [
+            "Mozilla Firefox",
+            "Netscape",
+            "Microsoft Bing",
+            "Opéra"
+        ],
+        "reponse": "Microsoft Bing",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 14,
+        "question": "Qui est l'auteur principal du HTML ?",
+        "propositions": [
+            "Brendan Eich",
+            "Tim Berners-Lee",
+            "Développeur web",
+            "Google Inc"
+        ],
+        "reponse": "Tim Berners-Lee",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 15,
+        "question": "Si on souhaite définir le style d'un seul élément, quel sélecteur CSS utilise-t'on ?",
+        "propositions": [
+            "id",
+            "text",
+            "class",
+            "name"
+        ],
+        "reponse": "id",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 16,
+        "question": "La balise HTML qui spécifie un style CSS intégré dans un élement s'appelle : ",
+        "propositions": [
+            "Design",
+            "Style",
+            "Modify",
+            "Define"
+        ],
+        "reponse": "Style",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 17,
+        "question": "Un type de document HTML plus strict est connu sous : ",
+        "propositions": [
+            "DHTML",
+            "XHTML",
+            "XML",
+            "HTML"
+        ],
+        "reponse": "XHTML",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 18,
+        "question": "Pour placer du texte autour d'un élément, on utilise : ",
+        "propositions": [
+            "push",
+            "float",
+            "align",
+            "wrap"
+        ],
+        "reponse": "float",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 19,
+        "question": "Si on veut utiliser une bordure verte autour d'une image, on utilise : ",
+        "propositions": [
+            "border-line",
+            "border-radius",
+            "border-decoration",
+            "border-color"
+        ],
+        "reponse": "border-color",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 20,
+        "question": "CSS est un acronyme pour : ",
+        "propositions": [
+            "Cascading Style Sheet",
+            "Costume Style Sheet",
+            "Cascading System Style",
+            "La réponse D"
+        ],
+        "reponse": "Cascading Style Sheet",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 21,
+        "question": "Quelle devrait être la valeur de la propriété 'width' d'un tableau de sorte que la largeur s'adapte à la largeur actuelle de la fenêtre du navigateur ?",
+        "propositions": [
+            "100%",
+            "640px",
+            "100em",
+            "1024px"
+        ],
+        "reponse": "100%",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 22,
+        "question": "Quel élément est utlisé dans < head > d'une page HTML/XHTML pour utiliser une feuille de style CSS externe pour décorer sa page ?",
+        "propositions": [
+            "< src >",
+            "< link >",
+            "< style >",
+            "css"
+        ],
+        "reponse": "< link >",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 23,
+        "question": "Quel attribut peut être ajouté à de nombreux éléments HTML/XHTML pour les identifier en tant que membre d'un groupe spécifique ?",
+        "propositions": [
+            "id",
+            "class",
+            "div",
+            "span"
+        ],
+        "reponse": "class",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 24,
+        "question": "Quelle propriété CSS utiliserez-vous pour ajouter une marge entre la bordure d'une DIV et son texte intérieur ?",
+        "propositions": [
+            "spacing",
+            "margin",
+            "padding",
+            "inner-margin"
+        ],
+        "reponse": "padding",
+        "anecdote": "La réponse D"
+    },
+    {
+        "id": 25,
+        "question": "Quelle propriété CSS est utilisée pour contrôler la taille d'un texte d'un élément ?",
+        "propositions": [
+            "font-style",
+            "text-size",
+            "font-size",
+            "text-style"
+        ],
+        "reponse": "font-size",
+        "anecdote": "La réponse D"
+    }
+]
