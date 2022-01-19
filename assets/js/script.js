@@ -8,12 +8,12 @@ async function getJson() {
 
 // fonction principale, en async également car recours à fetch( une nouvelle fois)
 async function check() {
-    document.querySelector('form').addEventListener('submit', submit);
+    document.querySelector('form').addEventListener('submit', valid);
     questions = await getJson(); //récupère data json sous forme de tableau
     shuffleArray(questions); //randomise le tableau
     questions = questions.slice(0, 5); //on sélectionne le nombre de questions à afficher
-    showQuestions();
-    showResult();
+    affichageQuiz();
+    affichageFin();
 }
 
 // fonction de tri aléatoire du tableau
@@ -23,7 +23,7 @@ function shuffleArray(array) {
 
 
 
-function showResult() { //affiche le résutat
+function affichageFin() { //affiche le résutat
     document.querySelector('form').innerHTML += `
    <div id="result">
       <div id="score"></div>
@@ -31,7 +31,7 @@ function showResult() { //affiche le résutat
    </div>`;
 }
 
-function showQuestions() { //fonction pour afficher les questions et les choix de réponses
+function affichageQuiz() { //fonction pour afficher les questions et les choix de réponses
     var form = document.querySelector('form');
     for (i = 1; i < questions.length + 1; i++) {
         question = questions[i - 1];
@@ -70,13 +70,13 @@ function inputValue(name) {
     return null;
 }
 
-function submit(event) { //valide le quiz, score et fin
+function valid(event) { //valide le quiz, score et fin
     event.preventDefault();
     var score = 0;
     for (let i = 0; i < questions.length; i++) {
-        var answerNumber = inputValue('question' + (i + 1));
+        var rep_nbr = inputValue('question' + (i + 1));
 
-        var answer = questions[i].propositions[answerNumber];
+        var answer = questions[i].propositions[rep_nbr];
         var bonneRep = questions[i].reponse;
 
         var label = document.querySelectorAll('#question' + (i + 1) + ' label');
@@ -88,12 +88,12 @@ function submit(event) { //valide le quiz, score et fin
         }
 
         // Compte le score et applique les couleurs
-        if (answerNumber) {
+        if (rep_nbr) {
             if (answer == bonneRep) {
                 score++;
-                label[answerNumber].parentNode.classList.add('green');
+                label[rep_nbr].parentNode.classList.add('green');
             } else {
-                label[answerNumber].parentNode.classList.add('red');
+                label[rep_nbr].parentNode.classList.add('red');
             }
         }
     }
