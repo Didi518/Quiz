@@ -91,16 +91,16 @@ function valid(event) { //valide le quiz, score et fin
             label[j].parentNode.classList.remove('red');
         }
 
-        // Compte le score et applique les couleurs
+        // Compte le score et applique les couleurs + pop de l'anecdote sur la réponse donnée est bonne
         if (rep_nbr) {
             if (answer == bonneRep) {
                 score++;
                 label[rep_nbr].parentNode.classList.add('green');
-                document.getElementById(`anecdote${i + 1}`).innerText = questions[i].anecdote; //on appelle l'instert des annecdotes si la réponse est bonne
             } else {
                 label[rep_nbr].parentNode.classList.add('red');
             }
         }
+        document.getElementById(`anecdote${i + 1}`).innerText = questions[i].anecdote; //on appelle l'instert des annecdotes
     }
 
     // Affiche le score + petite phrase en fonction du score
